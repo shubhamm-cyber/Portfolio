@@ -1,25 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
+import HeroSection from './Components/Hero';
+import Profile from './Components/Aboutme';
+import SkillSection from './Components/Skills';
+import PortfolioSection from './Components/Portfolio';
+import React, { useRef } from 'react';
+import Footer from './Components/Footer';
 
-function App() {
+const MainComponent = () => {
+  // Create refs for each section
+  const heroRef = useRef(null);
+  const profileRef = useRef(null);
+  const skillRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const footerRef = useRef(null);
+
+  const refs = {
+    heroRef,
+    profileRef,
+    skillRef,
+    portfolioRef
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar refs={refs} />
+      <div ref={heroRef}><HeroSection /></div>
+      <div ref={profileRef}><Profile /></div>
+      <div ref={skillRef}><SkillSection /></div>
+      <div ref={portfolioRef}><PortfolioSection /></div>
+      <div ref={footerRef} sx><Footer/></div>
+      
     </div>
   );
-}
+};
 
-export default App;
+export default MainComponent;
