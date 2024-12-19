@@ -7,23 +7,34 @@ import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 import NetworkCheckIcon from '@mui/icons-material/NetworkCheck';
 import BugReportIcon from '@mui/icons-material/BugReport';
 import DevicesIcon from '@mui/icons-material/Devices';
+import CloudIcon from '@mui/icons-material/Cloud';
+import ShieldIcon from '@mui/icons-material/Shield';
 
 const skills = [
   { name: 'Splunk', description: 'SIEM & log analysis', icon: <SecurityIcon /> },
-  { name: 'Limacharlie', description: 'EDR & threat detection', icon: <SecurityIcon /> },
+  { name: 'Microsoft Sentinel', description: 'Cloud monitoring & security', icon: <CloudIcon /> },
+  { name: 'QRadar', description: 'SIEM platform', icon: <SecurityIcon /> },
+  
   { name: 'Tines', description: 'SOAR & automation', icon: <EmojiObjectsIcon /> },
-  { name: 'Python', description: 'Scripting & automation', icon: <CodeIcon /> },
-  { name: 'Network Security', description: 'IDS/IPS & monitoring', icon: <SecurityIcon /> },
-  { name: 'Vulnerability Management', description: 'Nessus & Qualys', icon: <SecurityIcon /> },
+  { name: 'Limacharlie', description: 'EDR & threat detection', icon: <SecurityIcon /> },
+  { name: 'CrowdStrike Falcon', description: 'EDR & threat detection', icon: <SecurityIcon /> },
+  { name: 'Nessus', description: 'Vulnerability scanning', icon: <BugReportIcon /> },
+  
   { name: 'Wireshark', description: 'Network protocol analyzer', icon: <NetworkCheckIcon /> },
   { name: 'Snort', description: 'Network intrusion detection', icon: <NetworkCheckIcon /> },
+  { name: 'Suricata', description: 'Intrusion detection and prevention', icon: <ShieldIcon /> },
   { name: 'Metasploit', description: 'Penetration testing framework', icon: <BugReportIcon /> },
-  { name: 'Nessus', description: 'Vulnerability scanning', icon: <BugReportIcon /> },
-  { name: 'Burp Suite', description: 'Web vulnerability scanner', icon: <BugReportIcon /> },
-  { name: 'Kali Linux', description: 'Penetration testing OS', icon: <DevicesIcon /> },
+  { name: 'Burp Suite', description: 'Web vulnerability scanner', icon: <WebIcon /> },
   { name: 'Zeek', description: 'Network monitoring framework', icon: <NetworkCheckIcon /> },
+  { name: 'VirusTotal', description: 'Malware analysis & threat intelligence', icon: <ShieldIcon /> },
+  
+  { name: 'Python', description: 'Scripting & automation', icon: <CodeIcon /> },
+  { name: 'Kali Linux', description: 'Penetration testing OS', icon: <DevicesIcon /> },
   { name: 'Brim', description: 'Data exploration for security logs', icon: <NetworkCheckIcon /> },
-  // Add more skills as needed
+  { name: 'Autopsy', description: 'Digital forensics toolkit', icon: <BugReportIcon /> },
+  { name: 'FTK (Forensic Toolkit)', description: 'Incident response & forensics', icon: <BugReportIcon /> },
+  { name: 'Amazon GuardDuty', description: 'Cloud activity monitoring', icon: <CloudIcon /> },
+  
 ];
 
 const SkillsSection = () => {

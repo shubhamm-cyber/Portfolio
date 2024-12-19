@@ -28,10 +28,10 @@ const Footer = () => {
       }}
     >
       <Typography variant="body2" sx={{ marginRight: 2 }}>
-        Contact: +91 8928669994
+        Contact: +91 8421574875
       </Typography>
       <Typography variant="body2">
-        Email: shubhamahirrao4444@gmail.com
+        Email: shubhamahirrao.cyber@gmail.com
       </Typography>
     </Box>
   );
