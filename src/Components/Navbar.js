@@ -33,8 +33,10 @@ const Navbar = ({ refs }) => {
               <>
                 <Button color="inherit" sx={{ fontFamily: 'Poppins', marginRight: 2 }} onClick={() => scrollToSection(refs.heroRef)}>Home</Button>
                 <Button color="inherit" sx={{ fontFamily: 'Poppins', marginRight: 2 }} onClick={() => scrollToSection(refs.profileRef)}>Profile</Button>
+                <Button color="inherit" sx={{ fontFamily: 'Poppins', marginRight: 2 }} onClick={() => scrollToSection(refs.compTIARef)}>Certifications</Button>
                 <Button color="inherit" sx={{ fontFamily: 'Poppins', marginRight: 2 }} onClick={() => scrollToSection(refs.skillRef)}>Skills</Button>
                 <Button color="inherit" sx={{ fontFamily: 'Poppins', marginRight: 2 }} onClick={() => scrollToSection(refs.portfolioRef)}>Portfolio</Button>
+                
               </>
             )}
           </Box>
@@ -60,8 +62,10 @@ const Navbar = ({ refs }) => {
           >
             <MenuItem onClick={() => scrollToSection(refs.heroRef)} sx={{ fontFamily: 'Poppins' }}>Home</MenuItem>
             <MenuItem onClick={() => scrollToSection(refs.profileRef)} sx={{ fontFamily: 'Poppins' }}>Profile</MenuItem>
+            <MenuItem onClick={() => scrollToSection(refs.compTIARef)} sx={{ fontFamily: 'Poppins' }}>CompTIA</MenuItem>
             <MenuItem onClick={() => scrollToSection(refs.skillRef)} sx={{ fontFamily: 'Poppins' }}>Skills</MenuItem>
             <MenuItem onClick={() => scrollToSection(refs.portfolioRef)} sx={{ fontFamily: 'Poppins' }}>Portfolio</MenuItem>
+            
           </Menu>
         </Toolbar>
       </AppBar>

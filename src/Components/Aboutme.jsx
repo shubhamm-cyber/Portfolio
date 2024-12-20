@@ -82,7 +82,7 @@ const Profile = () => {
             >
               Email: shubhamahirrao.cyber@gmail.com
             </Typography>
-            <Typography
+            {/* <Typography
               variant="body1"
               sx={{
                 color: '#b0bec5',
@@ -93,8 +93,8 @@ const Profile = () => {
               }}
             >
               Language: English, Hindi, Marathi
-            </Typography>
-            <Typography
+            </Typography> */}
+            {/* <Typography
               variant="body1"
               sx={{
                 color: '#b0bec5',
@@ -105,7 +105,7 @@ const Profile = () => {
               }}
             >
               Location: Pune, Maharashtra, India
-            </Typography>
+            </Typography> */}
             {/* <Button
               variant="contained"
               color="primary"
